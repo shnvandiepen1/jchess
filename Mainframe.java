@@ -17,6 +17,8 @@ public class Mainframe extends MouseAdapter {
         frame.setSize(width, height);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        initPieces();
+
         panel = new BoardPanel();
         panel.setBackground(Color.gray);
         
@@ -25,5 +27,9 @@ public class Mainframe extends MouseAdapter {
         frame.setVisible(true);        
     } 
     
+    public static void initPieces(){
+        for(int i = 0; i < 8; i++){
+        }
+    }
 
 }
